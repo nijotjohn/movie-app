@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="row">
+    <button pButton type="button" label="more" (click)="fetchDetails();" ></button>
+    <ng-container *ngFor="let movie of movieList" >
+      <div class="col-4">
+        <p-card>
+          <p-header>
+              {{movie.Title}}
+          </p-header>
+          <p-footer>
+              {{movie.genre}}
+          </p-footer>
+        </p-card>
+      </div>
+    </ng-container>
+  </div>
+</div>
+
