@@ -1,14 +1,14 @@
 <div class="container">
   <div class="row">
     <button pButton type="button" label="more" (click)="fetchDetails();" ></button>
-    <ng-container *ngFor="let movie of movieList" >
+    <ng-container *ngFor="let movie of movies" >
       <div class="col-4">
         <p-card>
           <p-header>
-              {{movie.Title}}
+              {{movie.type}}
           </p-header>
           <p-footer>
-              {{movie.genre}}
+              {{movie.value}}
           </p-footer>
         </p-card>
       </div>
