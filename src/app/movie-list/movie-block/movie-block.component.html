@@ -1,0 +1,15 @@
+<ng-container *ngFor="let movie of myMovie.value; let i=index">
+  <div class="col-4">
+    <p-card>
+      <p-header>{{movie.Title}}</p-header><p>{{i}}</p>
+      <button pButton type="button" label="more" (click)="getMoreDetails(i)" ></button>
+      <ng-container *ngIf="myIndex === i">
+        <h6>{{movie.imdbID}}</h6>
+        <img src="{{movie.Poster}}" alt="">
+        <p-footer>
+          {{movie.Year}}
+        </p-footer>
+      </ng-container>
+    </p-card>
+  </div>
+</ng-container>

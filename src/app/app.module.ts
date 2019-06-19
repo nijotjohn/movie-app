@@ -10,12 +10,14 @@ import {ButtonModule} from 'primeng/button';
 import { HttpClientModule } from '@angular/common/http';
 
 import {CardModule} from 'primeng/card';
+import { MovieBlockComponent } from './movie-list/movie-block/movie-block.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    MovieListComponent
+    MovieListComponent,
+    MovieBlockComponent
   ],
   imports: [
     BrowserModule,

@@ -18,20 +18,7 @@ export class MovieListComponent implements OnInit {
   constructor(private http : HttpClient) { }
 
   ngOnInit() {
-    // this.movies = [
-    //   {
-    //     name : "walter mitty",
-    //     genre : "travel"
-    //   },
-    //   {
-    //     name : "into the wild",
-    //     genre : "travel"
-    //   },
-    //   {
-    //     name : "interstellar",
-    //     genre : "voyage"
-    //   },
-    // ]
+    this.fetchDetails();
   }
 
   getMovies(){
