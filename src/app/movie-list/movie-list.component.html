@@ -1,4 +1,12 @@
 <div class="container">
+  <div class="row">
+    <div class="ui-g-12 ui-md-4">
+        <div class="ui-inputgroup">
+            <button pButton type="button" label="Search"></button>
+            <input type="text" pInputText placeholder="Keyword">         
+        </div>
+    </div>
+  </div>
   <ng-container *ngFor="let movie of movies | slice:0:1" >
     <app-movie-block class="row" [myMovie]="movie"></app-movie-block>
   </ng-container>

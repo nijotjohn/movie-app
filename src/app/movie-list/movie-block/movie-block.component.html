@@ -1,7 +1,7 @@
 <ng-container *ngFor="let movie of myMovie.value; let i=index">
   <div class="col-4">
     <p-card>
-      <p-header>{{movie.Title}}</p-header><p>{{i}}</p>
+      <p-header>{{movie.Title}}</p-header>
       <button pButton type="button" label="more" (click)="getMoreDetails(i)" ></button>
       <ng-container *ngIf="myIndex === i">
         <h6>{{movie.imdbID}}</h6>
