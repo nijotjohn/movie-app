@@ -12,7 +12,7 @@ export class MovieListComponent implements OnInit {
   movies : any;
   movieList : any;
   
-  api : string = "http://www.omdbapi.com/?s=guardians&apikey=91a1fdbc";
+  api : string = "http://www.omdbapi.com/?apikey=91a1fdbc&s=love&page=20";
 
   
   constructor(private http : HttpClient) { }
