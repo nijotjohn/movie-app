@@ -11,13 +11,15 @@ import { HttpClientModule } from '@angular/common/http';
 
 import {CardModule} from 'primeng/card';
 import { MovieBlockComponent } from './movie-list/movie-block/movie-block.component';
+import { YearListComponent } from './movie-list/year-list/year-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     MovieListComponent,
-    MovieBlockComponent
+    MovieBlockComponent,
+    YearListComponent
   ],
   imports: [
     BrowserModule,
