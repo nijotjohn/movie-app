@@ -11,18 +11,25 @@ export class MovieListComponent implements OnInit {
 
   movies : any;
   movieList : any;
+  searchKeyword : string = '';
   
-  api : string = "http://www.omdbapi.com/?apikey=91a1fdbc&s=love&page=20";
+  api : string = "http://www.omdbapi.com/?apikey=91a1fdbc";
+  searchApi : string = '';
 
   
   constructor(private http : HttpClient) { }
 
   ngOnInit() {
+    // this.fetchDetails();
+  }
+
+  onKeywordSearch(){
+    this.searchApi = this.api+'&s='+this.searchKeyword;
     this.fetchDetails();
   }
 
   getMovies(){
-    return this.http.get(this.api);
+    return this.http.get(this.searchApi);
   }
 
   fetchDetails(){

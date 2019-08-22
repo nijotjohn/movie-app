@@ -2,10 +2,11 @@
 <div class="container">
   <div class="row">
     <div class="ui-g-12 ui-md-4">
-        <div class="ui-inputgroup">
-            <button pButton type="button" label="Search"></button>
-            <input type="text" pInputText placeholder="Keyword">         
-        </div>
+      <div class="ui-inputgroup">
+        <button pButton type="button" label="Search" (click)="onKeywordSearch();"></button>
+        <input type="text" pInputText placeholder="Keyword" [(ngModel)]="searchKeyword">         
+      </div>
+      <p-card>Enter a keyword to list related movies</p-card>
     </div>
   </div>
   <ng-container *ngFor="let movie of movies | slice:0:1" >
